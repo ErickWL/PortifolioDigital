@@ -1,6 +1,13 @@
+import { useState } from "react";
+
 import SectionLabel from "../Components/SectionLabel";
+import TerminalCat from "../Components/TerminalCat";
+import { AULAS } from "../data/aulas";
 
 function Aulas() {
+  const [selectedId, setSelectedId] = useState(AULAS[AULAS.length - 1].id);
+  const selected = AULAS.find((aula) => aula.id === selectedId);
+
   return (
     <article>
 
@@ -8,48 +15,61 @@ function Aulas() {
         # Aulas
       </SectionLabel>
 
-      <div className="log-entry">
+      <div className="term-line">
+        ls aulas/
+      </div>
 
-        <div className="log-head">
+      <div className="aula-file-list">
+        {AULAS.map((aula) => (
+          <button
+            key={aula.id}
+            className={
+              "aula-file" +
+              (aula.id === selectedId ? " aula-file-active" : "")
+            }
+            onClick={() => setSelectedId(aula.id)}
+          >
+            <span className="aula-file-cmd">
+              cat
+            </span>{" "}
+            {aula.id}.log
+          </button>
+        ))}
+      </div>
 
-          <span className="log-date">
-            06/08/2026
-          </span>
+      <TerminalCat command={`${selected.id}.log`} revealKey={selected.id}>
+        <div className="log-entry">
 
-          <span className="log-tag">
-            Portfólio Digital
-          </span>
+          <div className="log-head">
+
+            <span className="log-date">
+              {selected.date}
+            </span>
+
+            {selected.tags.map((tag) => (
+              <span className="log-tag" key={tag}>
+                {tag}
+              </span>
+            ))}
+
+          </div>
+
+          <p className="log-field">
+            <strong>
+              Sobre a aula —
+            </strong>{" "}
+            {selected.sobre}
+          </p>
+
+          <p className="log-field">
+            <strong>
+              Reflexão —
+            </strong>{" "}
+            {selected.reflexao}
+          </p>
 
         </div>
-
-        <p className="log-field">
-
-          <strong>
-            Sobre a aula —
-          </strong>{" "}
-
-          a aula apresentou o conceito de
-          portfólio digital, discutindo sua
-          importância como ferramenta de
-          apresentação profissional e acadêmica,
-          além de trazer ideias práticas de como
-          estruturar e construir um — desde a
-          escolha de conteúdo até a forma de
-          apresentá-lo.
-
-        </p>
-
-        <p className="log-field">
-
-          <strong>
-            Reflexão —
-          </strong>{" "}
-
-          O principal aprendizado foi perceber o portfólio como um registro contínuo de evolução. Em vez de focar apenas no resultado final dos projetos, passei a valorizar a documentação do processo — destacando as decisões de arquitetura, as boas práticas aplicadas e a resolução de problemas.
-
-        </p>
-
-      </div>
+      </TerminalCat>
 
     </article>
   );
