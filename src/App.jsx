@@ -8,6 +8,7 @@ import TerminalCat from "./Components/TerminalCat";
 import Sobre from "./Pages/Sobre";
 import Perfil from "./Pages/Perfil";
 import Aulas from "./Pages/Aulas";
+import Atividades from "./Pages/Atividades";
 import Projetos from "./Pages/Projetos";
 import Eventos from "./Pages/Eventos";
 import Equipe from "./Pages/Equipe";
@@ -89,6 +90,9 @@ function App() {
                   </TerminalCat>
                 }
               />
+
+              <Route path="/atividades" element={<Atividades />} />
+              <Route path="/atividades/:id" element={<Atividades />} />
 
               <Route path="*" element={<Navigate to="/sobre" replace />} />
             </Routes>

@@ -28,4 +28,101 @@ export const AULAS = [
     reflexao:
       "A atividade prática ajudou a fixar a diferença entre os três pilares, que muitas vezes se confundem só na teoria. Ficou mais claro como herança evita duplicação de código, como polimorfismo permite tratar objetos diferentes de forma uniforme, e como encapsulamento protege o estado interno de um objeto",
   },
+
+  {
+    id: "aula-17-08",
+    date: "17/08/2026",
+    tags: ["Gestão Ágil"],
+    sobre:
+      "a aula apresentou o manual do Projeto Integrador, explicando as regras e etapas do PI, seguida da apresentação dos temas e projetos integradores propostos por cada grupo da turma.",
+    reflexao:
+      "Foi útil ver os temas dos outros grupos lado a lado com o nosso — ajudou a entender melhor o escopo esperado para o PI e a calibrar o nível de profundidade que o nosso projeto precisa ter.",
+  },
+
+  {
+    id: "aula-24-08",
+    date: "24/08/2026",
+    tags: ["Gestão Ágil", "PI"],
+    sobre:
+      "orientações sobre o Projeto Integrador, organizadas em quatro blocos: a aula em si, o desenvolvimento do projeto, orientações gerais e uma reflexão a partir do vídeo da empresa FazSite, 'Problemas no processo de desenvolvimento de software', que ilustra de forma bem-humorada falhas comuns de comunicação e processo entre cliente e equipe de desenvolvimento.",
+    reflexao:
+      "O vídeo escancara um problema bem real: falta de alinhamento entre o que o cliente pede, o que é entendido e o que é entregue. Reforça a importância de validar requisitos continuamente durante o PI, em vez de assumir que a primeira interpretação está correta.",
+  },
+
+  {
+    id: "aula-17-08-ihc",
+    date: "17/08/2026",
+    fileName: "aula-17-08.log",
+    tags: ["IHC", "Projeto Integrador"],
+    sobre:
+      "aula focada no desenvolvimento do Projeto Integrador (P.I.), alinhando as diretrizes de desenvolvimento do projeto em andamento com os conceitos e requisitos de Interação Humano-Computador.",
+    reflexao:
+      "Integrar as práticas de IHC nas fases iniciais do Projeto Integrador ajuda a garantir que a usabilidade seja um pilar do sistema desde a base, e não apenas uma camada estética adicionada no final.",
+  },
+
+  {
+    id: "aula-31-08",
+    date: "31/08/2026",
+    atividadeId: "atividade-31-08",
+    tags: ["Gestão Ágil"],
+    sobre:
+      "aula sobre os fundamentos da Gestão Ágil: a evolução dos modelos de gestão (Taylorismo/Fordismo → Lean Manufacturing → Modelo Cascata → Movimento Ágil) e os principais métodos ágeis — Scrum (ciclos e papéis), Lean Software (fluxo sem desperdício), Kanban (fluxo contínuo e WIP) e XP (engenharia de software). Também foi explicada a diferença entre o modelo Cascata (rígido e sequencial) e o Ágil (flexível e adaptável), além dos critérios de avaliação da disciplina: mapa conceitual, portfólio e seminário.",
+    reflexao:
+      "Ficou clara a lógica evolutiva por trás dos modelos: cada um nasceu para resolver o limite do anterior — do controle rígido do Taylorismo até a adaptação contínua do Ágil. Também ajudou entender que Scrum, Lean, Kanban e XP não são concorrentes, mas focos diferentes dentro da mesma filosofia ágil.",
+  },
+
+  {
+    id: "aula-31-08-ihc",
+    date: "31/08/2026",
+    atividadeId: "atividade-31-08-ihc",
+    fileName: "aula-31-08.log",
+    tags: ["IHC", "Jornada do Usuário", "Persona"],
+    sobre:
+      "aula sobre Mapas de Jornada do Usuário, compreendendo pontos de contato, emoções e oportunidades na experiência digital de ponta a ponta. Um mapa de jornada é uma representação gráfica do processo pelo qual uma pessoa passa para atingir uma meta, alinhando a visão da equipe e revelando dores reais. Ele foca em sentimentos, expondo o que o usuário pensa e sente, não apenas os cliques. Seus componentes: Ator & Cenário, Fases & Ações, e Linha Emocional. Na prática, criamos uma Persona para um app de restaurante usando o Canva.",
+    reflexao:
+      "Construir a Persona e entender a Linha Emocional do Mapa de Jornada me fez perceber que o design não deve se basear em achismos. Mapear as frustrações (fricções) e objetivos reais direciona o foco do desenvolvimento para uma experiência verdadeiramente empática e eficiente para o cliente.",
+  },
+
+  {
+    id: "aula-20-08",
+    date: "20/08/2026",
+    atividadeId: "atividade-20-08",
+    tags: ["POO"],
+    sobre:
+      "atividade prática em grupo aplicando os pilares de POO (herança, polimorfismo e encapsulamento) em 5 cenários diferentes — biblioteca, banco, imobiliária, clínica médica e logística — seguida da implementação de boas práticas de programação (pseudocódigo e código) para parte desses cenários.",
+    reflexao:
+      "Trabalhar os mesmos conceitos em cenários de domínios bem diferentes (biblioteca, banco, imóveis, saúde, logística) ajudou a enxergar que herança, polimorfismo e encapsulamento não são amarrados a um tipo de sistema — são um jeito de organizar qualquer problema que tenha uma entidade geral com variações especializadas e uma ação que se comporta diferente conforme o tipo.",
+  },
+
+  {
+    id: "aula-24-08-ihc",
+    date: "24/08/2026",
+    atividadeId: "atividade-24-08-ihc",
+    fileName: "aula-24-08.log",
+    tags: ["IHC", "IA", "Formatação"],
+    sobre:
+      "atividade prática integrando o uso de IA para a geração de um texto base sobre Usabilidade, Acessibilidade e Comunicabilidade. O exercício exigiu a formatação estrutural rigorosa do documento de forma manual (fontes, tamanhos e alinhamentos específicos), utilizando a IA apenas como suporte para a criação do conteúdo bruto.",
+    reflexao:
+      "A atividade demonstrou que a IA é uma excelente ferramenta de apoio para iniciar tarefas e gerar ideias, mas a responsabilidade técnica, a adequação visual e a garantia de que as especificações do cliente (ou professor) foram cumpridas continuam dependendo totalmente do olhar humano.",
+  },
+
+  {
+    id: "aula-27-08",
+    date: "27/08/2026",
+    tags: ["POO", "Padrões de Projeto"],
+    sobre:
+      "a aula apresentou os padrões arquiteturais MVC, MVP e MVVM, cujo objetivo é separar responsabilidades e criar softwares escaláveis e manuteníveis. Também foi apresentada a definição formal de padrões de projeto — soluções típicas e comprovadas para problemas recorrentes de design, funcionando como 'plantas arquitetônicas' reutilizáveis e não como código pronto para copiar — e suas três categorias: Criacionais (mecanismos de criação de objetos), Estruturais (composição de classes e objetos em estruturas maiores) e Comportamentais (algoritmos e comunicação entre objetos).",
+    reflexao:
+      "Entender que padrão de projeto é conceito, não código pronto, muda a forma de estudar: não adianta decorar uma implementação específica, e sim reconhecer o problema que cada padrão resolve e em qual das três categorias (criacional, estrutural ou comportamental) ele se encaixa.",
+  },
+
+  {
+    id: "aula-03-09",
+    date: "03/09/2026",
+    tags: ["POO", "Avaliação"],
+    sobre:
+      "dia da Avaliação I da disciplina, cobrindo conceitos de POO (herança, polimorfismo, encapsulamento) e padrões de projeto/arquitetura de software (categorias de padrões e padrões arquiteturais como MVC, MVP e MVVM).",
+    reflexao:
+      "A prova confirmou a importância de entender o propósito de cada padrão em vez de decorar sintaxe — as questões cobraram identificar o conceito por trás de cenários, no mesmo estilo do que foi trabalhado na atividade dos 5 cenários.",
+  },
 ];
