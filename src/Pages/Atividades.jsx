@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import SectionLabel from "../Components/SectionLabel";
 import TerminalCat from "../Components/TerminalCat";
+import PdfAttachment from "../Components/PdfAttachment";
 import { ATIVIDADES } from "../data/atividades";
 
 function Atividades() {
@@ -124,9 +125,11 @@ function Atividades() {
             </>
           ) : (
             <>
-              <p className="log-field">
-                <strong>Parte I — Identificação de Conceitos de POO</strong>
-              </p>
+              {selected.conceitosPoo && (
+                <p className="log-field">
+                  <strong>Parte I — Identificação de Conceitos de POO</strong>
+                </p>
+              )}
 
               {selected.cenarios.map((cenario, i) => (
                 <div className="ativ-cenario" key={i}>
@@ -158,6 +161,13 @@ function Atividades() {
                 </p>
               )}
             </>
+          )}
+
+          {selected.anexoPdf && (
+            <PdfAttachment
+              file={selected.anexoPdf}
+              label={selected.anexoPdfLabel}
+            />
           )}
 
           {selected.reflexaoIndividual && (

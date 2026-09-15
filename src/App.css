@@ -405,6 +405,88 @@
   opacity: 1;
 }
 
+.ativ-pdf {
+  margin-bottom: 4px;
+}
+
+.ativ-pdf-trigger {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ativ-pdf-trigger:disabled {
+  cursor: default;
+}
+
+.ativ-pdf-window {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.ativ-pdf-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.ativ-pdf-head a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.ativ-pdf-head a:hover {
+  text-decoration: underline;
+}
+
+.ativ-pdf-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.ativ-pdf-page {
+  aspect-ratio: 3 / 4;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.ativ-pdf-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  position: absolute;
+  inset: 0;
+}
+
+.ativ-pdf-page span {
+  position: relative;
+  z-index: 1;
+  padding: 3px 6px;
+  background: var(--surface);
+}
+
 
 /* =========================
    AULAS / FILE LIST

@@ -112,6 +112,7 @@ export const ATIVIDADES = [
     folder: "dia-20-08",
     fileName: "atividade-poo-cenarios.md",
     tipo: "cenarios",
+    conceitosPoo: true,
     titulo: "Atividade Prática: Conceitos de POO e Boas Práticas",
     disciplina: "Técnicas de Programação II (TPII) / 3º DSM",
     professora: "Waldinelly Costa",
@@ -390,5 +391,77 @@ export const ATIVIDADES = [
     ],
     reflexaoIndividual:
       "Construir essa persona transformou um 'usuário genérico' em alguém com rotina, pressa e frustrações reais. Compreender os pain points nos dá um direcionamento muito mais assertivo para desenhar as funcionalidades e a interface do aplicativo do restaurante, focando no que realmente gera valor e alívio para o cliente.",
+  },
+
+  {
+    id: "atividade-18-09-ihc",
+    tipo: "cenarios",
+    titulo:
+      "Avaliação I: Planejamento de Experiência do Usuário (UX) e Mapeamento de Jornada",
+    disciplina: "Interação Humano-Computador (IHC) / 3º DSM",
+    professora: "Waldinelly Costa",
+    data: "18/09/2026",
+    orientacao:
+      "Atividade em grupo — Projeto Integrador (PI) — Persona e Mapa de Jornada produzidos no Canva, referentes ao AmbyData.",
+    anexoPdf: "avaliacaoIHC.pdf",
+    anexoPdfLabel: "Persona + Mapa de Jornada — AmbyData",
+    cenarios: [
+      {
+        titulo: "Persona: João, Gerente de Produção",
+        enunciado:
+          "Persona representativa do usuário principal do AmbyData, construída para orientar as decisões de IHC do dashboard de monitoramento industrial.",
+        perguntas: [
+          {
+            pergunta: "Perfil & Bio",
+            resposta:
+              "João, 40 anos, formado em Engenharia da Produção. Trabalha como gerente de produção em uma indústria alimentícia de grande porte em São Paulo.",
+          },
+          {
+            pergunta: "Objetivos",
+            resposta:
+              "Melhorar a eficiência e reduzir desperdícios na linha de produção; ter acesso rápido a relatórios e gráficos atualizados sobre produtividade, rendimento e custos; tomar decisões baseadas em dados em vez de relatórios manuais demorados.",
+          },
+          {
+            pergunta: "Frustrações (Dores)",
+            resposta:
+              "Falta de integração entre os sistemas de produção e relatórios; dificuldade em visualizar dados em tempo real; equipe com pouca familiaridade em ferramentas analíticas complexas.",
+          },
+          {
+            pergunta: "Cenário de Uso",
+            resposta:
+              "No início do turno da manhã, acessa o AmbyData para acompanhar os dados de produção do dia anterior e identificar rapidamente qualquer queda de eficiência.",
+          },
+        ],
+      },
+      {
+        titulo: "Mapa de Jornada do Usuário",
+        enunciado:
+          "Jornada de João ao identificar e resolver uma queda de eficiência na linha de produção, do acesso ao painel até a solicitação de manutenção.",
+        perguntas: [
+          {
+            pergunta: "Fase 1 — Acesso ao Painel",
+            resposta:
+              'Ação: acessa o AmbyData no início do turno da manhã. Pensamento: "Espero que os dados estejam atualizados." Dor: falta de integração entre sistemas de produção e relatórios. Oportunidade de IHC: interface simples e intuitiva, painel organizado.',
+          },
+          {
+            pergunta: "Fase 2 — Visualização dos Dados",
+            resposta:
+              'Ação: visualiza o painel principal com dados de produção do dia anterior. Pensamento: "Por que a eficiência caiu nesse setor?" Dor: dificuldade em visualizar dados em tempo real. Oportunidade de IHC: gráficos fáceis de entender, alertas por cores.',
+          },
+          {
+            pergunta: "Fase 3 — Diagnóstico da Falha",
+            resposta:
+              'Ação: usa os gráficos para localizar a máquina responsável pela queda de eficiência. Pensamento: "Achei, é essa máquina." Dor: falta de filtro rápido para localizar falhas. Oportunidade de IHC: filtros para localizar falhas rapidamente.',
+          },
+          {
+            pergunta: "Fase 4 — Ação/Resolução",
+            resposta:
+              'Ação: solicita manutenção da máquina pelo sistema. Pensamento: "Preciso agir antes que afete o turno." Dor: equipe com pouca familiaridade em ferramentas analíticas. Oportunidade de IHC: notificações em tempo real.',
+          },
+        ],
+      },
+    ],
+    reflexaoIndividual:
+      "Separar Persona e Jornada em artefatos distintos deixou mais claro o papel de cada um: a Persona ancora quem é o usuário e o que ele precisa, enquanto a Jornada revela onde exatamente a interface do AmbyData precisa reduzir atrito — informação que não aparece olhando só o perfil isolado.",
   },
 ];
