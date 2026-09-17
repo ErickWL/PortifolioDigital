@@ -403,7 +403,7 @@ export const ATIVIDADES = [
     data: "18/09/2026",
     orientacao:
       "Atividade em grupo — Projeto Integrador (PI) — Persona e Mapa de Jornada produzidos no Canva, referentes ao AmbyData.",
-    anexoPdf: "avaliacaoIHC.pdf",
+    anexoPdf: "AvaliacaoIHC2.pdf",
     anexoPdfLabel: "Persona + Mapa de Jornada — AmbyData",
     cenarios: [
       {
