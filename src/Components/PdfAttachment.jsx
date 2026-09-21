@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import personaPreview from "../img/IHCPDF.png";
 import journeyPreview from "../img/IHCpdf2.png";
+import gestaoPreview from "../img/Gestaoavaliacao.png";
+import gestaoPreview2 from "../img/Gestaoavaliacao2.png";
 
 const TYPE_SPEED = 35;
 
@@ -36,8 +38,14 @@ function PdfAttachment({ file, label, pages }) {
     return () => clearInterval(intervalRef.current);
   }, [file]);
 
-  const pageLabels = pages || ["Persona", "Mapa de Jornada"];
-  const pageImages = [personaPreview, journeyPreview];
+  const pageLabels =
+    pages ||
+    (file === "Ambydata-AvaliacaoGP.pdf"
+      ? ["Mapa Conceitual", "Casos Analisados"]
+      : ["Persona", "Mapa de Jornada"]);
+  const pageImages = file === "Ambydata-AvaliacaoGP.pdf"
+    ? [gestaoPreview, gestaoPreview2]
+    : [personaPreview, journeyPreview];
 
   return (
     <div className="ativ-pdf">

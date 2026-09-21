@@ -125,4 +125,70 @@ export const AULAS = [
     reflexao:
       "A prova confirmou a importância de entender o propósito de cada padrão em vez de decorar sintaxe — as questões cobraram identificar o conceito por trás de cenários, no mesmo estilo do que foi trabalhado na atividade dos 5 cenários.",
   },
+
+  {
+    id: "aula-10-09",
+    date: "10/09/2026",
+    tags: ["POO", "Projeto Integrador"],
+    sobre:
+      "em TPII, entrega do escopo do Projeto Integrador (AmbyData) — o mesmo documento de escopo já registrado neste portfólio.",
+    reflexao:
+      "Formalizar o escopo por escrito reforçou o que entra e o que não entra no projeto antes de avançar — evita retrabalho e desalinhamento com o grupo mais à frente.",
+  },
+
+  {
+    id: "aula-14-09-ga",
+    date: "14/09/2026",
+    fileName: "aula-14-09.log",
+    tags: ["Gestão Ágil", "Seminário", "Mapa Conceitual"],
+    sobre:
+      "apresentação de seminário: pesquisa de 3 artigos que usam Scrum como metodologia principal de pesquisa, e construção de um mapa conceitual conectando o framework aos três casos analisados e ao AmbyData.",
+    reflexao:
+      "Ficou claro que o Scrum não é uma 'ferramenta' fechada — aparece de formas diferentes em cada artigo (ML, produto de software, BI), e mapear essas conexões ajudou a fundamentar teoricamente como estamos aplicando Scrum no próprio AmbyData.",
+  },
+
+  {
+    id: "aula-14-09-ihc",
+    date: "14/09/2026",
+    fileName: "aula-14-09.log",
+    tags: ["IHC", "Persona", "Jornada do Usuário"],
+    sobre:
+      "em IHC, criação da persona João (gerente de produção) e de um Mapa de Jornada de Usuário, analisando como seria a interação dele com o AmbyData.",
+    reflexao:
+      "Trabalhar a persona e a jornada em cima do nosso próprio projeto, e não de um exemplo genérico, deixou muito mais claro onde a interface do AmbyData realmente precisa resolver fricção real do usuário.",
+  },
+
+  {
+    id: "aula-17-09",
+    date: "17/09/2026",
+    tags: ["POO", "Projeto Integrador"],
+    sobre:
+      "definimos o tema do projeto de POO: um aplicativo de gerenciamento de salas para facilitar o agendamento e a organização dos laboratórios e salas de aula da faculdade.",
+    reflexao:
+      "Escolher um problema real da própria faculdade (agendamento de salas e laboratórios) deixou o escopo mais concreto desde o início — dá pra validar requisitos com usuários reais (colegas e professores) em vez de imaginar um cenário hipotético.",
+  },
+
+  {
+    id: "aula-18-09-ihc",
+    date: "18/09/2026",
+    fileName: "aula-18-09.log",
+    atividadeId: "atividade-18-09-ihc",
+    tags: ["IHC", "Persona", "Jornada do Usuário"],
+    sobre:
+      "em IHC, Avaliação I: formalização da persona João e do Mapa de Jornada do Usuário (trabalhados em aula no dia 14/09) aplicados ao AmbyData.",
+    reflexao:
+      "Formalizar por escrito o que tinha sido feito em aula ajudou a revisar e deixar mais preciso cada ponto de fricção do João — principalmente as oportunidades de IHC que iam ficando só implícitas na discussão em sala.",
+  },
+
+  {
+    id: "aula-21-09",
+    date: "21/09/2026",
+    fileName: "aula-21-09.log",
+    atividadeId: "atividade-21-09-ga",
+    tags: ["Gestão Ágil", "Avaliação"],
+    sobre:
+      "entrega da avaliação de Gestão Ágil: documento com o mapa conceitual conectando Scrum aos 3 artigos pesquisados e ao AmbyData, apresentado no seminário de 14/09.",
+    reflexao:
+      "Formalizar a entrega separou o momento de apresentar (14/09, ao vivo) do momento de documentar (21/09, por escrito) — ajudou a revisar e deixar o mapa conceitual mais claro do que ficou só na apresentação oral.",
+  },
 ];

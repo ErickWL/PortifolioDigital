@@ -401,13 +401,20 @@ export const ATIVIDADES = [
     disciplina: "Interação Humano-Computador (IHC) / 3º DSM",
     professora: "Waldinelly Costa",
     data: "18/09/2026",
+    integrantes: [
+      "Andressa de Souza Engel",
+      "Erick Weiller Lansarin",
+      "Guilherme Casseb Zullo Do Rosario",
+      "Victor César Leite Da Silva",
+      "Vitória Caroline Gouveia De Oliveira",
+    ],
     orientacao:
-      "Atividade em grupo — Projeto Integrador (PI) — Persona e Mapa de Jornada produzidos no Canva, referentes ao AmbyData.",
+      "Atividade em grupo — Projeto Integrador (PI) — Persona e Mapa de Jornada referentes ao AmbyData.",
     anexoPdf: "AvaliacaoIHC2.pdf",
     anexoPdfLabel: "Persona + Mapa de Jornada — AmbyData",
     cenarios: [
       {
-        titulo: "Persona: João, Gerente de Produção",
+        titulo: "Persona: João, 40 anos — Gerente de Produção",
         enunciado:
           "Persona representativa do usuário principal do AmbyData, construída para orientar as decisões de IHC do dashboard de monitoramento industrial.",
         perguntas: [
@@ -464,4 +471,52 @@ export const ATIVIDADES = [
     reflexaoIndividual:
       "Separar Persona e Jornada em artefatos distintos deixou mais claro o papel de cada um: a Persona ancora quem é o usuário e o que ele precisa, enquanto a Jornada revela onde exatamente a interface do AmbyData precisa reduzir atrito — informação que não aparece olhando só o perfil isolado.",
   },
+
+  {
+    id: "atividade-21-09-ga",
+    tipo: "cenarios",
+    titulo:
+      "Seminário: AmbyData — Mapa Conceitual sobre a Aplicação do Scrum em um Modelo Integrado de ML",
+    disciplina: "Gestão Ágil de Projetos de Software / 3º DSM",
+    professora: "Waldinelly Costa",
+    data: "21/09/2026",
+    integrantes: [
+      "Andressa de Souza Engel",
+      "Erick Weiller Lansarin",
+      "Guilherme Casseb Zullo Do Rosario",
+      "Victor César Leite Da Silva",
+      "Vitória Caroline Gouveia De Oliveira",
+    ],
+    orientacao:
+      "Atividade em grupo — Projeto Integrador (PI) — seminário com mapa conceitual, entregue via portfólio.",
+    anexoPdf: "Ambydata-AvaliacaoGP.pdf",
+    anexoPdfLabel: "Mapa Conceitual — Scrum aplicado ao AmbyData",
+    cenarios: [
+      {
+        titulo: "Mapa Conceitual: Scrum + AmbyData",
+        enunciado:
+          "O mapa conecta o framework Scrum (papéis, eventos, artefatos) a três casos reais que usam a metodologia, mostrando como cada um contribui teórica ou praticamente para o desenvolvimento do AmbyData.",
+        perguntas: [
+          {
+            pergunta: "Caso 1 — Machine Learning + Metodologias Ágeis",
+            resposta:
+              "Revisão bibliográfica sobre a integração entre Machine Learning e métodos ágeis, explorando modelos como o Agile-SOFL e o uso de ML para estimar esforço e reduzir riscos. Fundamenta teoricamente a combinação entre ML e Scrum usada no AmbyData.",
+          },
+          {
+            pergunta: "Caso 2 — Scrum em Produto de Software Real",
+            resposta:
+              "Estudo de caso sobre a implantação do Scrum em uma pequena empresa de base tecnológica, com indicadores de benefício avaliados pela própria equipe. Serve como referência de como o Scrum se comporta na prática.",
+          },
+          {
+            pergunta: "Caso 3 — Scrum em Projeto de Business Intelligence",
+            resposta:
+              "Aplicação do Scrum à construção de um repositório central de dados e ferramentas de análise (caso Toyota Motor Sales USA) — o caso mais próximo do domínio do AmbyData.",
+          },
+        ],
+      },
+    ],
+    reflexaoIndividual:
+      "Ver o Scrum validado em contextos tão diferentes (ML, produto de software, BI) deixou mais concreta a ideia de que a metodologia se adapta ao domínio — e ajudou a justificar, com base teórica, as escolhas de gestão ágil que estamos fazendo no próprio AmbyData.",
+  },
 ];
+
