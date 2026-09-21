@@ -29,6 +29,8 @@ portfolio/
 
 Em `/aulas`, cada registro mostra data, tags, resumo, reflexão e, quando disponível, um link para a atividade correspondente. Em `/atividades`, são exibidos questionários, respostas dissertativas, cenários de POO, boas práticas, implementações e atividades de IHC.
 
+Os anexos em PDF ficam em `public/docs/` e são acessados pelos registros de atividades que possuem documentos complementares.
+
 ## Tecnologias
 
 - React 19
@@ -68,3 +70,4 @@ src/
 ├── App.jsx           roteamento principal
 ├── App.css           estilos da interface
 └── main.jsx          ponto de entrada do React
+```
